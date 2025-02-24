@@ -1,0 +1,39 @@
+<!-- HTML for registration-form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css"><!--linking the CSS file to the HTML file-->
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form id="registration-form"><!--creating a form if inputs for collecting data -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <span class="error-message" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        <span class="error-message" id="password-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
+        <span class="error-message" id="confirm-password-error"></span>
+      </div>
+      <button type="submit" id="submit-btn">Submit</button><!--Submit button-->
+    </form>
+  </div>
+  <script src="validation.js"></script><!--linking the javascript file to the HTML-->
+</body>
+</html>
