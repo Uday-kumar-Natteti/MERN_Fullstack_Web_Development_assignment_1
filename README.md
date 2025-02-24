@@ -1,0 +1,2 @@
+# MERN_Fullstack_Web_Development_assignments
+Internship assignments
